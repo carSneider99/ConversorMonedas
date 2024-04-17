@@ -4,18 +4,18 @@ import java.util.Map;
 public class ConversorMonedas {
 
     private String result;
-    private Map<String, Double> conversion_rates = new HashMap<String, Double>();
+    private final Map<String, Double> conversion_rates = new HashMap<>();
 
     public String getResult() {
         return result;
     }
 
-    public double realizarConversion (double monto, String codigoMonedaOrigen, String codigoMonedaDestino) throws Exception {
+    public double realizarConversion (double monto, String codigoMonedaOrigen, String codigoMonedaDestino){
         if (!conversion_rates.containsKey(codigoMonedaOrigen))
-            throw new Exception("Verifique el código de la moneda origen : (" + codigoMonedaOrigen + "), es inválido");
+            throw new RuntimeException("Verifique el código de la moneda origen : (" + codigoMonedaOrigen + "), es inválido");
 
         if (!conversion_rates.containsKey(codigoMonedaDestino))
-            throw new Exception("Verifique el código de la moneda destino : (" + codigoMonedaDestino + "), es inválido");
+            throw new RuntimeException("Verifique el código de la moneda destino : (" + codigoMonedaDestino + "), es inválido");
 
         return monto * conversion_rates.get(codigoMonedaDestino) / conversion_rates.get(codigoMonedaOrigen);
     }
