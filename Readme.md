@@ -15,8 +15,8 @@ Para finalizar la ejecución del programa, ingrese un número menor a 1 o mayor 
 
 ## Segunda solución al reto propuesto
 
-En la clase secundario, se puede testear la segunda solución al reto, donde a diferenciad de la primera opción, se deben
-de ingresar los códigos de la moneda de origen y de destino. Aprecie en la siguiente imagen como se convierten 240
+En la clase secundario, se puede testear la segunda solución al reto, donde a diferencia de la primera opción, se deben
+ingresar los códigos de las monedas de origen y de destino. Aprecie en la siguiente imagen como se convierten 240
 dólares a pesos colombianos, obteniendo la misma salida de la primera opción.
 
 ![](imgs/EjecucionSegundaOpcion.png)

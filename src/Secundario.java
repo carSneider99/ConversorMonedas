@@ -18,13 +18,13 @@ public class Secundario {
                     ************************************************
                     """);
 
-            System.out.print("Digite código de la moneda origen (USD, ARS, BRL, COL), si ingresa salir, finalizará el programa: ");
+            System.out.print("Digite código de la moneda origen (USD, ARS, BRL, COP), si ingresa salir, finalizará el programa: ");
             codigosMonedas[0] = scanner.next();
 
             if (codigosMonedas[0].equalsIgnoreCase("salir"))
                 break;
 
-            System.out.print("Digite código de la moneda destino (USD, ARS, BRL, COL): ");
+            System.out.print("Digite código de la moneda destino (USD, ARS, BRL, COP): ");
             codigosMonedas[1] = scanner.next();
 
             try {
